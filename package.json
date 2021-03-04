@@ -11,10 +11,14 @@
     "@react-aria/button": "^3.3.1",
     "@react-aria/focus": "^3.2.3",
     "@react-aria/interactions": "^3.3.3",
-    "@types/react-dom": "^17.0.1",
     "classnames": "^2.2.6",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "source-map-loader": "^2.0.1",
+    "ts-loader": "^8.0.17",
+    "webpack": "^5.24.3",
+    "webpack-cli": "^4.5.0",
+    "webpack-merge": "^5.7.3"
   },
   "devDependencies": {
     "@babel/core": "^7.13.8",
@@ -22,13 +26,21 @@
     "@storybook/addon-essentials": "^6.1.21",
     "@storybook/addon-links": "^6.1.21",
     "@storybook/react": "^6.1.21",
+    "@tailwindcss/postcss7-compat": "^2.0.3",
     "@types/node": "^14.14.31",
     "@types/react": "^17.0.2",
+    "@types/react-dom": "^17.0.1",
+    "autoprefixer": "^9",
     "babel-loader": "^8.2.2",
+    "postcss": "^7",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat",
     "typescript": "^4.2.2"
   },
   "scripts": {
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build": "webpack --config webpack.js",
+    "build-storybook": "build-storybook",
+    "build:tailwind": "postcss .storybook/scss/base.scss -o .storybook/scss/tailwind.scss"
   }
 }

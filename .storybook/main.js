@@ -1,3 +1,5 @@
+const path = require('path')
+
 module.exports = {
   "stories": [
     "../src/**/*.stories.mdx",
@@ -5,6 +7,27 @@ module.exports = {
   ],
   "addons": [
     "@storybook/addon-links",
-    "@storybook/addon-essentials"
-  ]
+    "@storybook/addon-essentials",
+    '@storybook/preset-scss'
+  ],
+  webpackFinal: async (config) => {
+    config.module.rules.push({
+      test: /\.scss$/,
+      use: [
+        'style-loader'  ,
+        {
+          loader: 'postcss-loader',
+          options: {
+            ident: 'postcss',
+            plugins: [
+              require('tailwindcss'),
+              require('autoprefixer'),
+            ],
+          },
+        },
+      ],
+      include: path.resolve(__dirname, '../'),
+    })
+    return config
+  },
 }
