@@ -1,7 +1,6 @@
-import preset from "../tailwind.config.js"
 
 // Tailwind preset
-export {preset}
+export * as preset from "../tailwind.config.js"
 
 // Components
 export * from "./Button";

@@ -42,6 +42,7 @@
     "storybook": "start-storybook -p 6006",
     "build": "webpack --config webpack.js",
     "build-storybook": "build-storybook",
-    "build:tailwind": "postcss .storybook/scss/base.scss -o .storybook/scss/tailwind.scss"
+    "build:tailwind": "postcss .storybook/scss/base.scss -o .storybook/scss/tailwind.scss",
+    "release": "auto shipit --base-branch=main"
   }
 }
