@@ -47,4 +47,4 @@ function Button(props: Props, forwardedRef: Ref<HTMLButtonElement>) {
 const _Button = forwardRef(Button) as (
   props: Props & { ref?: Ref<HTMLButtonElement> }
 ) => ReactElement;
-export { _Button as Button };
+export default Button;

@@ -14,9 +14,8 @@ module.exports = {
     globalObject: "this",
     filename: 'index.bundle.js',
     path: path.resolve(__dirname, 'dist'),
-    library: 'prisma-lens', // used for creating a lib
+    library: 'halsey', // used for creating a lib
     libraryTarget: 'commonjs2', // used for creating a lib
-    umdNamedDefine: true, // used for creating a lib
   },
   externals: {
     // avoid bundling all of React into the same file
