@@ -1,3 +1,15 @@
+# v0.1.3 (Fri Mar 05 2021)
+
+#### ⚠️ Pushed to `main`
+
+- trying new things ([@hrescak](https://github.com/hrescak))
+
+#### Authors: 1
+
+- Matej Hrescak ([@hrescak](https://github.com/hrescak))
+
+---
+
 # v0.1.2 (Thu Mar 04 2021)
 
 #### ⚠️ Pushed to `main`
