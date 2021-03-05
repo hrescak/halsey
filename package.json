@@ -1,9 +1,12 @@
 {
   "name": "halsey",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Experiment / personal design system",
   "main": "dist/index.bundle.js",
-  "files": ["dist","tailwind.config.js"],
+  "files": [
+    "dist",
+    "tailwind.config.js"
+  ],
   "repository": "https://github.com/hrescak/halsey.git",
   "author": "Matej Hrescak <matej@hrescak.com>",
   "license": "MIT",
